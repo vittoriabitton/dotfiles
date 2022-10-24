@@ -1,4 +1,2 @@
 # Set zsh as login shell
 chsh -s $(which zsh)
-
-env RCRC=$HOME/dotfiles/rcrc rcup
