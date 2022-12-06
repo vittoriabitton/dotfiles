@@ -6,3 +6,6 @@
 [user]
         name = Vittoria Bitton
         email = bitton.vittoria@gmail.com
+
+[includeIf "gitdir:~/Workspace/valued/**/.git"]
+  path = ~/.gitconfig-valued
