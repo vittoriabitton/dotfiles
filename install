@@ -1,0 +1,12 @@
+for file in $(ls home)
+do
+  source="$root/home/$file"
+  target="$HOME/.$file"
+
+  if [[ -s $target ]] || [[ -d $target ]]; then
+    echo "Skipping $target as it already exists"
+  else
+    echo "Symlinking $target => $source"
+    ln -s $source $target
+  fi
+done
